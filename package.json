@@ -1,0 +1,42 @@
+{
+  "name": "gulp-template",
+  "version": "0.0.0",
+  "description": "gulp-template =============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimpeiws/gulp-template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shimpeiws/gulp-template/issues"
+  },
+  "homepage": "https://github.com/shimpeiws/gulp-template",
+  "browserify": {
+    "transform": [
+      "coffeeify",
+      "debowerify"
+    ]
+  },
+  "devDependencies": {
+    "browserify": "^8.0.2",
+    "coffee-script": "^1.8.0",
+    "coffeeify": "^1.0.0",
+    "debowerify": "^1.2.0",
+    "gulp": "^3.8.10",
+    "gulp-coffee": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "main-bower-files": "^2.4.1",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "browser": {
+    "jquery": "./itemlist-react/vendor/assets/javascripts/jquery/dist/jquery.js",
+    "lodash" : "./itemlist-react/vendor/javascripts/lodash/dist/lodash.compact.js"
+  }
+}
