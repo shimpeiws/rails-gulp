@@ -37,6 +37,6 @@
   },
   "browser": {
     "jquery": "./itemlist-react/vendor/assets/javascripts/jquery/dist/jquery.js",
-    "lodash" : "./itemlist-react/vendor/javascripts/lodash/dist/lodash.compact.js"
+    "lodash" : "./itemlist-react/vendor/assets/javascripts/lodash/dist/lodash.compact.js"
   }
 }

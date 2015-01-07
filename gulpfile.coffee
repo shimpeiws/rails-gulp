@@ -59,13 +59,13 @@ gulp.task 'libSass', ->
     .pipe sass
       style: 'expanded'
     .pipe gulp.dest dest.cssLib
-    
+
 gulp.task 'bower', ->
   gulp.src bower(), base: 'bower_components', bowerJson: 'bower.json'
     .pipe gulp.dest dest.vendorJsLib
- 
+
 gulp.task 'watch', ['build'], ->
-  gulp.watch [files.appCoffee, files.appSass], ['coffee', 'sass']
+  gulp.watch [files.appCoffee, files.appSass, files.appCoffeeLib], ['coffee', 'sass', 'browserify']
 
 gulp.task 'build', ['coffee', 'sass']
 
